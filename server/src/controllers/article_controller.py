@@ -4,7 +4,7 @@ from controllers.ticker_controller import TickerController
 from utils.article_utils import ArticleUtils
 from utils.logging_utils import LoggingUtils
 
-
+  
 class ArticleController:
 
     @staticmethod
