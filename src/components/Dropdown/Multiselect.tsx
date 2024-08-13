@@ -38,16 +38,15 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({
   };
 
   const handleSubmitClick = () => {
-    handleSubmit()
-    handleToggleDropdown()
-  }
+    handleSubmit();
+    handleToggleDropdown();
+  };
 
   return (
     <div className="w-1/4 relative">
       <div
         onClick={handleToggleDropdown}
-        className="p-3 text-xs lg:text-base rounded-3xl flex items-center gap-2 border border-neutral-300 cursor-pointer truncate h-10 bg-white text-black"
-      >
+        className="p-3 text-xs lg:text-base rounded-3xl flex items-center gap-2 border border-neutral-300 cursor-pointer truncate h-10 bg-white text-black">
         {selectName}
         <div className="hidden md:inline-block ml-auto">
           <MdKeyboardDoubleArrowDown />
@@ -71,8 +70,7 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({
                   name.toLowerCase().includes(filter.toLowerCase())
                     ? "flex"
                     : "hidden"
-                }`}
-              >
+                }`}>
                 <input
                   checked={selectedOptions.includes(name)}
                   onChange={() => handleCheckboxChange(name)}
@@ -83,8 +81,7 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({
                 />
                 <label
                   htmlFor={name.toLowerCase()}
-                  className="ml-2 text-xs lg:text-base hover:cursor-pointer text-gray-900 flex-grow"
-                >
+                  className="ml-2 text-xs lg:text-base hover:cursor-pointer text-gray-900 flex-grow">
                   {name}
                 </label>
               </div>
@@ -100,3 +97,4 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({
 };
 
 export default MultiSelectDropdown;
+///////
