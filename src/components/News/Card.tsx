@@ -72,8 +72,7 @@ const Card: React.FC<Article> = ({
           <p
             className={`text-xl font-semibold ${getSentimentColorClass(
               sentiment
-            )}`}
-          >
+            )}`}>
             {sentiment}
           </p>
         </div>
@@ -93,8 +92,7 @@ const Card: React.FC<Article> = ({
                   : open_price > close_price
                   ? "text-red-500"
                   : ""
-              }`}
-            >
+              }`}>
               {open_price < close_price
                 ? "▲"
                 : open_price > close_price
@@ -110,8 +108,7 @@ const Card: React.FC<Article> = ({
 
         <a
           href={article_url}
-          className={`border text-red-500 border-red-500 hover:text-white hover:bg-red-500 transform hover:scale-105 font-semibold py-2 px-4 rounded mt-4 inline-block transition duration-300 ease-in-out cursor-pointer`}
-        >
+          className={`border text-red-500 border-red-500 hover:text-white hover:bg-red-500 transform hover:scale-105 font-semibold py-2 px-4 rounded mt-4 inline-block transition duration-300 ease-in-out cursor-pointer`}>
           Read More
         </a>
       </div>
@@ -120,3 +117,5 @@ const Card: React.FC<Article> = ({
 };
 
 export default Card;
+
+//////////
