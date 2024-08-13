@@ -25,3 +25,4 @@ export const SearchProvider: React.FC<{ children: ReactNode }> = ({
     </SearchContext.Provider>
   );
 };
+//////
